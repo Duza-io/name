@@ -13,6 +13,8 @@ public class App {
       Thread.sleep(100);
     }
 
+    System.out.println();
+
     String[] enteredName = new String[3];
 
     System.out.println("\nEnter three names: \n");
