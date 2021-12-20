@@ -1,3 +1,10 @@
+/*
+@author: Mark Duza
+student from STI Ortigas-Cainta
+MAWD student
+*/
+
+
 import java.util.*;
 
 public class App {
@@ -5,15 +12,13 @@ public class App {
   public static Scanner input = new Scanner(System.in);
 
   public static void main(String[] args) throws Exception {
-    //test test test
+
     String greet = "\nWelcome to my program!";
 
     for (int i = 0; i < greet.length(); i++) {
       System.out.print(greet.charAt(i));
       Thread.sleep(100);
     }
-
-    System.out.println();
 
     String[] enteredName = new String[3];
 
