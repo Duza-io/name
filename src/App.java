@@ -5,7 +5,8 @@ public class App {
   public static Scanner input = new Scanner(System.in);
 
   public static void main(String[] args) throws Exception {
-    String greet = "Welcome to my program!";
+    //test test test
+    String greet = "\nWelcome to my program!";
 
     for (int i = 0; i < greet.length(); i++) {
       System.out.print(greet.charAt(i));
@@ -36,20 +37,19 @@ public class App {
     List<String> combination = new ArrayList<>();
 
     for (int i = 0; i < enteredName.length - 1; i++) {
-        for (int j = i + 1; j < enteredName.length; j++) {
-            combination.add(enteredName[i] + " " + enteredName[j]);
-            combination.add(enteredName[j] + " " + enteredName[i]);
-        }
+      for (int j = i + 1; j < enteredName.length; j++) {
+        combination.add(enteredName[i] + " " + enteredName[j]);
+        combination.add(enteredName[j] + " " + enteredName[i]);
+      }
     }
 
     System.out.println("\nSix possible names:");
     int number = 0;
     //foreach loop
     for (String output : combination) {
-        number++;
-        System.out.println(number + ": " + output);
-        Thread.sleep(1000);
+      number++;
+      System.out.println(number + ": " + output);
+      Thread.sleep(1000);
     }
-
   }
 }
